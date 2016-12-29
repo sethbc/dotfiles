@@ -1,0 +1,15 @@
+[submodule "spf13-vim-3"]
+	path = spf13-vim-3
+	url = https://github.com/spf13/spf13-vim.git
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule "bash-it"]
+	path = bash-it
+	url = https://github.com/Bash-it/bash-it.git
+[submodule "tmux-powerline"]
+	path = tmux-powerline
+	url = https://github.com/erikw/tmux-powerline.git
+[submodule "emacs.d"]
+	path = emacs.d
+	url = https://github.com/syl20bnr/spacemacs
