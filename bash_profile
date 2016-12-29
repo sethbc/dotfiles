@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Path to the bash it configuration
-export BASH_IT="/Users/sethbc/src/bash-it"
+export BASH_IT="/Users/sethbc/.bash_it"
 
 # Lock and Load a custom theme file
 # location /.bash_it/themes/
@@ -27,12 +27,19 @@ export TODO="t"
 export SCM_CHECK=true
 
 # Set vcprompt executable path for scm advance info in prompt (demula theme)
-# https://github.com/xvzf/vcprompt
+# https://github.com/djl/vcprompt
 #export VCPROMPT_EXECUTABLE=~/.vcprompt/bin/vcprompt
+
+PATH="/usr/local/opt/ccache/libexec:$HOME/bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 # Load Bash It
 source $BASH_IT/bash_it.sh
+eval `gdircolors ~/.dir_colors`
+alias ls="ls --color=auto"
+alias ll="ls --color=auto -al"
 
-PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-alias ls='ls --color=auto'
+export GOPATH=$HOME/golang
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOROOT/bin
+
