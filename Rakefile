@@ -78,11 +78,6 @@ task :pull do
   system "git submodule foreach git pull"
 end
 
-desc "Prepare System"
-task :prepare_system do
-  system "./install-software.sh"
-end
-
 desc "Change default shell to zsh"
 task :change_shell do
   sh "chsh -s /bin/zsh"
@@ -96,7 +91,6 @@ task :update_vim do
 end
 
 task :bootstrap => [
-#  :prepare_system,
   :change_shell,
   :init
 ]

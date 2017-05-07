@@ -85,6 +85,9 @@ export SSH_KEY_PATH="~/.ssh/id_ed25519"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+# Only load Liquid Prompt in interactive shells, not from a script or from scp
+[[ $- = *i* ]] && source ~/liquidprompt/liquidprompt
+
 if [ $(uname) = "Darwin"  ] ; then
     export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
     export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
