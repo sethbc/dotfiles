@@ -62,7 +62,7 @@ end
 desc "Install"
 task :default => [
   :pull,
-  :update_vim,
+  #:update_vim,
   :install
 ]
 
@@ -83,12 +83,12 @@ task :change_shell do
   sh "chsh -s /bin/zsh"
 end
 
-desc "update vim"
-task :update_vim do
-  Dir.chdir 'spf13-vim-3' do
-    system "vim +BundleInstall! +BundleClean +q"
-  end
-end
+#desc "update vim"
+#task :update_vim do
+#  Dir.chdir 'spf13-vim-3' do
+#    system "vim +BundleInstall! +BundleClean +q"
+#  end
+#end
 
 task :bootstrap => [
   :change_shell,
