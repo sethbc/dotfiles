@@ -794,7 +794,7 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 ###############################################################################
 
 # Disable automatic emoji substitution (i.e. use plain text smileys)
-defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticEmojiSubstitutionEnablediMessage" -bool false
+# defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticEmojiSubstitutionEnablediMessage" -bool false
 
 # Disable smart quotes as it’s annoying for messages that contain code
 defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticQuoteSubstitutionEnabled" -bool false
@@ -806,13 +806,13 @@ defaults write com.apple.messageshelper.MessageController SOInputLineSettings -d
 # Google Chrome & Google Chrome Canary                                        #
 ###############################################################################
 
-# Disable the all too sensitive backswipe on trackpads
-defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
-defaults write com.google.Chrome.canary AppleEnableSwipeNavigateWithScrolls -bool false
+# # Disable the all too sensitive backswipe on trackpads
+# defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
+# defaults write com.google.Chrome.canary AppleEnableSwipeNavigateWithScrolls -bool false
 
-# Disable the all too sensitive backswipe on Magic Mouse
-defaults write com.google.Chrome AppleEnableMouseSwipeNavigateWithScrolls -bool false
-defaults write com.google.Chrome.canary AppleEnableMouseSwipeNavigateWithScrolls -bool false
+# # Disable the all too sensitive backswipe on Magic Mouse
+# defaults write com.google.Chrome AppleEnableMouseSwipeNavigateWithScrolls -bool false
+# defaults write com.google.Chrome.canary AppleEnableMouseSwipeNavigateWithScrolls -bool false
 
 # Use the system-native print preview dialog
 defaults write com.google.Chrome DisablePrintPreview -bool true
